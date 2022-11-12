@@ -1,0 +1,118 @@
+.team {
+    background-color: #EFFFF7;
+    padding: 64px 114px 0 114px;
+    margin-top: 200px;
+}
+
+.team__info_title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    /* identical to box height */
+
+
+    background: linear-gradient(90deg, #4BDCAA -1.57%, #35C493 101.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.team__info_descp {
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+
+    color: #242424;
+}
+
+.team__info_btn {
+    display: inline-block;
+    padding: 16px 8px;
+    background: #E8666D;
+    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-feature-settings: 'cpsp' on;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.team__info_btn:hover {
+    background: #9a464a;
+    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    transition: 0.8s;
+}
+
+.column-50{
+    max-width: 50%;
+}
+.team__photos{
+    display: flex;
+}
+
+.team__photos img{
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+.team__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-2, .column-3{
+    margin-left: 42px;
+}
+
+.column-1, .column-3{
+    transform: translateY(-96px);
+}
+.column-2{
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 1000px){
+    .team__info{
+        display: block;
+    }
+    .column-50.mob{
+        margin-bottom: 126px;
+    }
+    .column-50{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team{
+        padding: 64px 64px 0 64px;
+    }
+    .column-2, .column-3{
+        margin-left: 12px;
+    }
+    .team__photos img{
+        margin-bottom: 10;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .team__photos img{
+        max-height: 96px;
+        max-width: 96px;
+    }
+   
+}
